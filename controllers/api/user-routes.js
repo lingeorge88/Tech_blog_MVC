@@ -79,7 +79,7 @@ router.post('/login', (req, res) =>{
             email:req.body.email
         }
     }).then(dbUserData =>{
-        if(!dbUserData) =>{
+        if(!dbUserData) {
             res.stautus(400).json({ message: 'No user with that email address found, try a different email address'});
             return;
         }

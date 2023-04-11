@@ -2,46 +2,46 @@ const { User } = require('../models');
 
 const userData = [
     {
-        username: 'johndoe123',
-        twitter: 'johndoe',
-        github: 'johndoe123',
-        email: 'johndoe123@gmail.com',
-        password: 'password1'
+        username: "martin_bour",
+        twitter: "martinb",
+        github: "martinb",
+        email: "martin_b@gmail.com",
+        password: "p@ssword1"
     },
     {
-        username: 'sarahsmith789',
-        twitter: '@sarahsmith',
-        github: 'sarahsmith789',
-        email: 'sarahsmith789@hotmail.com',
-        password: 'password11'
+        username: "matt_b",
+        twitter: "mathewb",
+        github: "mathewb",
+        email: "mathew_b@gmail.com",
+        password: "p@ssword2"
     },
     {
-        username: 'tomjones456',
-        twitter: '@tomjones',
-        github: 'tomjones456',
-        email: 'tomjones456@yahoo.com',
-        password: 'password2'
+        username: "shaun_c",
+        twitter: "shaun",
+        github: "shaun",
+        email: "shaun_c@gmail.com",
+        password: "p@ssword3"
     },
     {
-        username: 'lisawilson123',
-        twitter: '@lisawilson',
-        github: 'lisawilson123',
-        email: 'lisawilson123@gmail.com',
-        password: 'password3'
+        username: "lee_n",
+        twitter: "leenorris",
+        github: "leenorris",
+        email: "lee_n@gmail.com",
+        password: "p@ssword4"
     },
     {
-        username: 'michaelbrown789',
-        twitter: '@michaelbrown',
-        github: 'michaelbrown789',
-        email: 'michaelbrown789@hotmail.com',
-        password: 'password4'
+        username: "priya_r",
+        twitter: "priyaravi23",
+        github: "priyaravi23",
+        email: "priya_r@gmail.com",
+        password: "p@ssword5"
     },
     {
-        username: 'emilytaylor456',
-        twitter: '@emilytaylor',
-        github: 'emilytaylor456',
-        email: 'emilytaylor456@yahoo.com',
-        password: 'password5'
+        username: "pooja",
+        twitter: "pooja_w",
+        github: "pooja",
+        email: "pooja@gmail.com",
+        password: "p@ssword6"
     }
 ]
 
