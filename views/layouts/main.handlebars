@@ -5,32 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MVC Tech Blog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <div>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/dashboard">Dashboard</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">MVC Tech Blog</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard">Dashboard</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
           {{#if loggedIn}}
-          <a href="/" id="logout">Logout</a>
+          <li class="nav-item">
+            <a class="btn btn-outline-warning" href="/" id="logout">Logout</a>
+          </li>
           {{else}}
-          <a href="/login">Login</a>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary" href="/login">Login</a>
+          </li>
           {{/if}}
-        </nav>
+        </ul>
       </div>
-      <div>
-        <h1 class="home-title">MVC Tech Blog</h1>
+    </nav>
+    <div class="container">
+      <h1 class="text-center my-4">{{{ body }}}</h1>
+    </div>
+    <footer class="bg-dark py-3 fixed-bottom">
+      <div class="container">
+        <p class="text-center text-white">Thanks for visiting!</p>
+        <p class="text-center text-white"><a href="https://github.com/lingeorge88">Made by: George Lin </a></p>
       </div>
-    </header>
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-      Thanks for visiting!
     </footer>
   </div>
   {{#if loggedIn}}

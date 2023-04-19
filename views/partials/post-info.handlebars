@@ -1,14 +1,14 @@
-<article class="post">
-  <div class="post-head">  
-    <div class="title">
-      <a href="/post/{{id}}">{{title}}</a>
-    </div>
-    <div class="meta">
-      Posted By {{user.username}} on {{format_date created_at}} | 
-      {{comments.length}} {{format_plural "comment" comments.length}}
-    </div>
+<a href="/post/{{id}}" class="card-link"><div class="card">
+  <h3 class="card-header">{{title}}</h3>
+  <div class="card-body">
+    <p class="card-text">{{post_text}}</p>
+    <h6 class="card-subtitle mb-2 text-muted">Posted By
+      {{user.username}}
+      on
+      {{format_date created_at}}
+      |
+      {{comments.length}}
+      {{format_plural "comment" comments.length}}</h6>
   </div>
-  <div class="post-text">
-    {{post_text}}
-  </div>
-</article>
+</div>
+</a>
