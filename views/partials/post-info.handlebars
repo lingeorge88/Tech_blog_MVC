@@ -1,26 +1,13 @@
-<div class="card mb-6">
-  <header class="card-header card-header-title has-background-grey-lighter">
-    
-        <div class="column">
-            <p class=" has-text-primary-light"></p>
-      <a href="/post/{{id}}"  class="has-text-black is-capitalized is-pulled-left">{{title}} </a></p>
-      </div>
-
-      <div class="column">
-      <span class=""> </span>
-      </div>
-    
-  </header>
-
-    <div class="card-content">
-        <div class="content has-text-justified">
-            {{post_content}}
-        </div>
-            <div class="is-pulled-right">
-                <b>{{user.username}}</b> | 
-                <a href="https://twitter.com/{{user.twitter}}"><i class="fab fa-twitter"></i></a> 
-                <a href="https://github.com/{{user.github}}"><i class="fab fa-github"></i></a>
-                 | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-            </div>
-        
+<div class="container">
+  <div class="row">
+<a href="/post/{{id}}" class="card-link">
+  <div class="card mb-3">
+    <h3 class="card-header">{{title}}</h3>
+    <div class="card-body">
+      <p class="card-text small" style="font-size: 14px;">{{post_text}}</p>
+      <h6 class="card-subtitle mb-2 text-muted">Posted By {{user.username}} on {{format_date created_at}} | {{comments.length}} {{format_plural "comment" comments.length}}</h6>
     </div>
+  </div>
+</a>
+</div>
+</div>
